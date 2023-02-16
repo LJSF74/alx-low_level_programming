@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 /**
  * main - main funct
  *
@@ -6,6 +6,7 @@
  */
 int main(void)
 {
-	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", 33);
+	char ch[] ="and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	fwrite(ch, 1, 59, stderr);
 	return (1);
 }
