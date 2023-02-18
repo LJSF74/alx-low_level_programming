@@ -1,20 +1,19 @@
 #include <stdio.h>
 /**
  * main - default entry
- *
+ * 
  * Return: 0
  */
-int main(void)
-{
+int main(void) {
 	char i;
-
-	for (i = '0'; i <= '9'; i++)
+	for ( i = '0'; i <= '9'; i++)
 	{
 		putchar(i);
+	if (i != '9')
+	{
+		putchar(',');
+		putchar(' ');
 	}
-	for (i = 'a'; i <= 'f'; i++)
-	{
-		putchar(i);
 	}
 	putchar('\n');
 	return (0);
