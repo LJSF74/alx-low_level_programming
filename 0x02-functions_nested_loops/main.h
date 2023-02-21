@@ -26,3 +26,7 @@ int print_sign(int n);
 #define ABS
 int _abs(int);
 #endif
+#ifndef LAST_DIG
+#define LAST_DIG
+int print_last_digit(int);
+#endif
