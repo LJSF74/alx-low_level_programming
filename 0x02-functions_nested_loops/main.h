@@ -22,3 +22,7 @@ int _isalpha(int c);
 #define CHECK_SIGN
 int print_sign(int n);
 #endif
+#ifndef ABS
+#define ABS
+int _abs(int);
+#endif
