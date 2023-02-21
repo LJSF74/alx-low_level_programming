@@ -18,3 +18,7 @@ int _islower(int c);
 #define CHECK_ALPHA
 int _isalpha(int c);
 #endif
+#ifndef CHECK_SIGN
+#define CHECK_SIGN
+int print_sign(int n);
+#endif
