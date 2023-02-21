@@ -10,3 +10,7 @@ void print_alphabet(void);
 #define TEN_ALPHA
 void print_alphabet_x10(void);
 #endif
+#ifndef
+#define
+int _islower(int c);
+#endif
