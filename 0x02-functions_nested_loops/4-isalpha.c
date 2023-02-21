@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * isalpha - default entry
+ * _isalpha - default entry
  * @c: charcter or number
  *
  * Return: 0 or 1
