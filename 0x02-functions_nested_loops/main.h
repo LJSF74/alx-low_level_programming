@@ -16,5 +16,5 @@ int _islower(int c);
 #endif
 #ifndef CHECK_ALPHA
 #define CHECK_ALPHA
-int _isalpha(int c)
+int _isalpha(int c);
 #endif
