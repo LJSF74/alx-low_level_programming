@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * main - default entry
  *
