@@ -34,3 +34,7 @@ int print_last_digit(int);
 #define JB
 void jack_bauer(void);
 #endif
+#ifndef TT
+#define TT
+void times_table(void);
+#endif
