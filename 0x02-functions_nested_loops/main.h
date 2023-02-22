@@ -46,3 +46,7 @@ int add(int, int);
 #define PRINT_TO_NINE_EIGHT
 void print_to_98(int n);
 #endif
+#ifndef PRIME_T
+#define PRIME_T
+void print_times_table(int n);
+#endif
