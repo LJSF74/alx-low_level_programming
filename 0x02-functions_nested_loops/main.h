@@ -30,3 +30,7 @@ int _abs(int);
 #define LAST_DIG
 int print_last_digit(int);
 #endif
+#ifndef JB
+#define JB
+void jack_bauer(void);
+#endif
