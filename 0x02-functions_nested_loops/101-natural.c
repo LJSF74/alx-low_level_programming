@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints the sum of the multiples of the number in parameter
- * 
+ *
  * Return: 0
  */
 int main(void)
