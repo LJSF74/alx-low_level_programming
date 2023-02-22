@@ -11,7 +11,7 @@ void jack_bauer(void)
 	{
 		for (j = 0 ; j <= 59 ; j++)
 		{
-			printf("02%i:%02i", i, j);
+			printf("02%i:%02i\n", i, j);
 		}
 	}
 }
