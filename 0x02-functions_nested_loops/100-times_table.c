@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_times_table - prints mult table of prime nums between 0 and 15
+ * @n: number of lines and cols of mult table
  */
 void print_times_table(int n)
 {
@@ -22,7 +23,7 @@ void print_times_table(int n)
 					}
 					else if (m < 100)
 					{
-						printf(",  ");	
+						printf(",  ");
 					}
 					else
 					{
