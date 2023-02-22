@@ -15,14 +15,11 @@ void times_table(void)
 			printf("%d", m);
 			if (j < 9 && m < 10)
 			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				printf(",  ");
 			}
 			else if (j < 9 && m >= 10)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
 		}
 		printf("\n");
