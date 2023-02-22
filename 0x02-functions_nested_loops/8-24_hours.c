@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * jack_bauer - prints all hours of the day
  */
@@ -10,7 +11,7 @@ void jack_bauer(void)
 	{
 		for (j = 0 ; j <= 59 ; j++)
 		{
-			_putchar(i + ':' + j);
+			printf("02%i:%02i", i, j);
 		}
 	}
 }
