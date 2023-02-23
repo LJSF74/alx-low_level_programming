@@ -16,8 +16,8 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			_puthchar('#');
-			putchar('\n');
+			_putchar('#');
+			_putchar('\n');
 		}
 	}
 	else
