@@ -2,3 +2,7 @@
 #define IS_UPPER
 int _isupper(int c);
 #endif
+#ifndef IS_DIGIT
+#define IS_DIGIT
+int _isdigit(int c);
+#endif
