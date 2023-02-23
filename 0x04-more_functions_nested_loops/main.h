@@ -34,3 +34,7 @@ void print_line(int n);
 #define PRINT_DIAG
 void print_diagonal(int n);
 #endif
+#ifndef PRINT_SQR
+#define PRINT_SQR
+void print_square(int size);
+#endif
