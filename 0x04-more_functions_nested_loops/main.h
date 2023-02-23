@@ -18,3 +18,7 @@ void print_numbers(void);
 #define PRINT_NUM_TWO
 void print_most_numbers(void);
 #endif
+#ifndef MORE_NUM
+#define MORE_NUM
+void more_numbers(void);
+#endif
