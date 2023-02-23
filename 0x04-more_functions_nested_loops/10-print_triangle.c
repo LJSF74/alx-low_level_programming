@@ -25,12 +25,13 @@ void print_triangle(int size)
 				{
 					_putchar('#');
 				}
-				if (k != size)
+				if (k < size && k > 0)
 				{
 					_putchar('\n');
 				}
 			}
 		}
+		_putchar('\n');
 	}
 	else
 	{
