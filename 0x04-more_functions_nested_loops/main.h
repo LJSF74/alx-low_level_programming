@@ -30,3 +30,7 @@ void more_numbers(void);
 #define PRINT_LN
 void print_line(int n);
 #endif
+#ifndef PRINT_DIAG
+#define PRINT_DIAG
+void print_diagonal(int n);
+#endif
