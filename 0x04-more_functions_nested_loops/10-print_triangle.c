@@ -1,14 +1,9 @@
 #include "main.h"
-#include <unistd.h>
 /**
  * print_triangle - prints a triangle
  * @size: triangle size
  * Return: void
  */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 void print_triangle(int size)
 {
 	int i, j, k;
