@@ -26,7 +26,7 @@ void print_most_numbers(void);
 #define MORE_NUM
 void more_numbers(void);
 #endif
-#ifndef
-#define
+#ifndef PRINT_LN
+#define PRINT_LN
 void print_line(int n);
 #endif
