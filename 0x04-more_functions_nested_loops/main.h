@@ -6,7 +6,7 @@ int _isupper(int c);
 #define IS_DIGIT
 int _isdigit(int c);
 #endif
-#ifndef
-#define
+#ifndef MULT
+#define MULT
 int mul(int a, int b);
 #endif
