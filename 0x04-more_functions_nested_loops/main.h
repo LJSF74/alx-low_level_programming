@@ -10,3 +10,7 @@ int _isdigit(int c);
 #define MULT
 int mul(int a, int b);
 #endif
+#ifndef PRINT_NUM
+#define PRINT_NUM
+void print_numbers(void);
+#endif
