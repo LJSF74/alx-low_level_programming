@@ -10,6 +10,10 @@ int _isdigit(int c);
 #define MULT
 int mul(int a, int b);
 #endif
+#ifndef _PUTCHAR
+#define _PUTCHAR
+int _putchar(char c);
+#endif
 #ifndef PRINT_NUM
 #define PRINT_NUM
 void print_numbers(void);
@@ -21,4 +25,8 @@ void print_most_numbers(void);
 #ifndef MORE_NUM
 #define MORE_NUM
 void more_numbers(void);
+#endif
+#ifndef
+#define
+void print_line(int n);
 #endif
