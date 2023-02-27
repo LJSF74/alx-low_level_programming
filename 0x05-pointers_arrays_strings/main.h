@@ -26,3 +26,7 @@ void rev_string(char *s);
 #define PUTS_2
 void puts2(char *str);
 #endif
+#ifndef PUTS_HALF
+#define PUTS_HALF
+void puts_half(char *str);
+#endif
