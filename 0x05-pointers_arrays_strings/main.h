@@ -14,3 +14,7 @@ int _strlen(char *s);
 #define PUTS
 void _puts(char *str);
 #endif
+#ifndef PRINT_REV
+#define PRINT_REV
+void print_rev(char *s);
+#endif
