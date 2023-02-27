@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * main - updates value of pointer in parameter
+ * reset_to_98 - updates value of pointer in parameter
  * @*n: parameter
  * Return: void
  */
