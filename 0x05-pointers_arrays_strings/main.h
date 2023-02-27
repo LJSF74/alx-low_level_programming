@@ -34,3 +34,7 @@ void puts_half(char *str);
 #define PRINT_ARRAY
 void print_array(int *a, int n);
 #endif
+#ifndef STR_CPY
+#define STR_CPY
+char *_strcpy(char *dest, char *src);
+#endif
