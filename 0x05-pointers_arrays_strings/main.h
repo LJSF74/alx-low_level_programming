@@ -10,3 +10,7 @@ void swap_int(int *a, int *b);
 #define STR_LEN
 int _strlen(char *s);
 #endif
+#ifndef PUTS
+#define PUTS
+void _puts(char *str);
+#endif
