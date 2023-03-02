@@ -9,7 +9,6 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = strlen(dest);
 	int j = strlen(src);
 	int k = 0;
 
