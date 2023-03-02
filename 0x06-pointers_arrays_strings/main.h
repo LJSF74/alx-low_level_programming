@@ -10,3 +10,7 @@ char *_strncat(char *dest, char *src, int n);
 #define STR_NCPY
 char *_strncpy(char *dest, char *src, int n);
 #endif
+#ifndef STR_CMP
+#define STR_CMP
+int _strcmp(char *s1, char *s2);
+#endif
