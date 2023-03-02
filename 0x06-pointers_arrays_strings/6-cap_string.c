@@ -13,7 +13,7 @@ char *cap_string(char *s)
 		, ';', '.', '!', '?', '\"',
 		'(', ')', '{', '}'};
 
-	while (i < strlen(s))
+	while (*(s + i) != '\0')
 	{
 		for (j = 0 ; j < 13 ; j++)
 		{
