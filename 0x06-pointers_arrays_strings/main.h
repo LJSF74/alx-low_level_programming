@@ -22,3 +22,7 @@ void reverse_array(int *a, int n);
 #define TO_UPPER
 char *string_toupper(char *);
 #endif
+#ifndef CAP_STR
+#define CAP_STR
+char *cap_string(char *);
+#endif
