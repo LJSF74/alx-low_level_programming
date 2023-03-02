@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * cap_string - capitalizes words of a str
  * @s: string
@@ -8,21 +9,21 @@ char *cap_string(char *s)
 {
 	int i = 0;
 	int j;
-	char w, c;
-	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(', ')', '{', '}'};
+	char sep[13] = {' ', '\t', '\n', ','
+		, ';', '.', '!', '?', '\"',
+		'(', ')', '{', '}'};
 
-	while (*(s + i) != '\0')
+	while (i < strlen(s))
 	{
-		w = *(s + i);
 		for (j = 0 ; j < 13 ; j++)
 		{
-			if (w == sep[j])
+			if (*(s + i) == sep[j])
 			{
-				c = *(s + i + 1);
-				c = c - 32;
-				*(s + i + 1) = c;
+				if (*(s + i + 1) >= 'a' && *(s + i + 1) <= 'z' )
+					*(s + i + 1) = *(s + i + 1) - 32;
 			}
 		}
 		i++;
 	}
+	return (s);
 }
