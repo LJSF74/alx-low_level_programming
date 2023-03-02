@@ -15,8 +15,8 @@ int _strcmp(char *s1, char *s2)
 	{
 		a = *s1++;
 		b = *s2++;
-		if ( a == '\0')
+		if (a == '\0')
 			return (a - b);
 	}
-	return a - b;
+	return (a - b);
 }
