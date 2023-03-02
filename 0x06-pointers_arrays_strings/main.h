@@ -18,3 +18,7 @@ int _strcmp(char *s1, char *s2);
 #define REV_ARR
 void reverse_array(int *a, int n);
 #endif
+#ifndef TO_UPPER
+#define TO_UPPER
+char *string_toupper(char *);
+#endif
