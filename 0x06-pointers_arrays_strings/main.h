@@ -14,3 +14,7 @@ char *_strncpy(char *dest, char *src, int n);
 #define STR_CMP
 int _strcmp(char *s1, char *s2);
 #endif
+#ifndef REV_ARR
+#define REV_ARR
+void reverse_array(int *a, int n);
+#endif
