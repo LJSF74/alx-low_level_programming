@@ -4,6 +4,7 @@
  * _strncat - concatenates n bytes of src to dest
  * @dest: destination
  * @src: source
+ * @n: num of bytes to copy
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
@@ -21,5 +22,14 @@ char *_strncat(char *dest, char *src, int n)
 			k++;
 		}
 	}
-	return dest;
+	else
+	{
+		while (k < j)
+		{
+			*(dest + i) = *(src + k);
+			i++;
+			k++;
+		}
+	}
+	return (dest);
 }
