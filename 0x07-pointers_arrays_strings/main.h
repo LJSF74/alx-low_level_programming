@@ -10,3 +10,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 #define _STRCHR
 char *_strchr(char *s, char c);
 #endif
+#ifndef _STRSPN
+#define _STRSPN
+unsigned int _strspn(char *s, char *accept);
+#endif
