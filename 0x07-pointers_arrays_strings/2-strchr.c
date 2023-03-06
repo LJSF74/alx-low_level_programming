@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <string.h>
 /**
  * _strchr - returns pointer to 1st occurence of c
  * @s: char to parse
