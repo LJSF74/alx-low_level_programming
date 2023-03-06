@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - returns pointer to 1st occurence of c
  * @s: char to parse
@@ -15,6 +16,10 @@ char *_strchr(char *s, char c)
 	while (s[i] != c)
 	{
 		i++;
+		if (i == sizeof(s))
+		{
+			return (NULL);
+		}
 	}
 	for (j = i ; j < sizeof(s); j++)
 	{
