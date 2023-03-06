@@ -9,7 +9,7 @@ char *_strchr(char *s, char c)
 {
 	static char charac[sizeof(s)];
 	int i = 0;
-	long unsigned int j;
+	unsigned long int j;
 	int k = 0;
 
 	while (s[i] != c)
