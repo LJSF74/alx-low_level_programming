@@ -13,7 +13,7 @@ char *_strchr(char *s, char c)
 
 	while (s[i] != '\0')
 	{
-		ret = strchr(s, c);
+		charac = strchr(s, c);
 		i++;
 	}
 	return (charac);
