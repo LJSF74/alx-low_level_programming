@@ -18,3 +18,15 @@ unsigned int _strspn(char *s, char *accept);
 #define _STRPBRK
 char *_strpbrk(char *s, char *accept);
 #endif
+#ifndef _STRSTR
+#define _STRSTR
+char *_strstr(char *haystack, char *needle);
+#endif
+#ifndef PRINT_CHESSB
+#define PRINT_CHESSB
+void print_chessboard(char (*a)[8]);
+#endif
+#ifndef PRINT_DIAGSM
+#define PRINT_DIAGSM
+void print_diagsums(int *a, int size);
+#endif
