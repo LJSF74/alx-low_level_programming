@@ -1,10 +1,10 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strpbrk.c - returns first occurence of chars if accept in s
+ * _strpbrk - returns first occurence of chars if accept in s
  * @s: string to scan
  * @accept: chars to be scanned
- * Return: st 
+ * Return: st
  */
 char *_strpbrk(char *s, char *accept)
 {
