@@ -30,3 +30,7 @@ void print_chessboard(char (*a)[8]);
 #define PRINT_DIAGSM
 void print_diagsums(int *a, int size);
 #endif
+#ifndef _PUTCHAR
+#define _PUTCHAR
+int _putchar(char c);
+#endif
