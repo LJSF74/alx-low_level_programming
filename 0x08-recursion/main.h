@@ -26,3 +26,7 @@ int _sqrt_recursion(int n);
 #define IS_PRM
 int is_prime_number(int n);
 #endif
+#ifndef _PUTCHAR
+#define _PUTCHAR
+int _putchar(char c);
+#endif
