@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * is_prime - checks if b is prime
- * @a: incremened int
- * @b: int to check
+ * @x: incremened int
+ * @y: int to check
  * Return: 0 or 1
  */
 int is_prime(int x, int y)
