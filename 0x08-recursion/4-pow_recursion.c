@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- *
+ * _pow_recursion - prints x to the pow of y
+ * @x: num1
+ * @y: num2
+ * Return: x**y
  */
 int _pow_recursion(int x, int y)
 {
