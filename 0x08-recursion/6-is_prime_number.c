@@ -7,17 +7,17 @@
  */
 int is_prime(int x, int y)
 {
-	if (b < 2 || b % a == 0)
+	if (y < 2 || y % x == 0)
 	{
 		return (0);
 	}
-	else if (a > b / 2)
+	else if (x > y / 2)
 	{
 		return (1);
 	}
 	else
 	{
-		return (is_prime(a + 1), b);
+		return (is_prime(x + 1), y);
 	}
 }
 /**
