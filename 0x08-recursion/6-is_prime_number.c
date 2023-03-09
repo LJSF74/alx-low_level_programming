@@ -17,7 +17,7 @@ int is_prime(int x, int y)
 	}
 	else
 	{
-		return (is_prime(x + 1), y);
+		return (is_prime(x + 1, y));
 	}
 }
 /**
