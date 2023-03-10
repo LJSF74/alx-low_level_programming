@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 /**
  * main - prints the program name
  * @argc: number of args
@@ -25,9 +26,9 @@ int main(int argc, char *argv[])
 		for (i = 1 ; i < argc ; i++)
 		{
 			test = argv[i];
-			for (j = 0 ; j < sizeof(argv[i]); j++)
+			for (j = 0 ; j < strlen(test); j++)
 			{
-				if(isdigit(test[i]) == 0)
+				if(isdigit(test[j]) == 0)
 				{
 					printf("Error\n");
 					return (1);
