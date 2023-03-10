@@ -11,9 +11,10 @@
  */
 int main(int argc, char *argv[])
 {
-	int n = 0;
+	int n;
 	int i;
-	unsigned long int j;
+	int l;
+	int j;
 	char *test;
 
 	if (argc == 1)
@@ -23,27 +24,24 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (i = 1 ; i < argc ; i++)
+		n = 0;
+		for (i = 1; i < argc; i++)
 		{
 			test = argv[i];
-			for (j = 0 ; j < strlen(test); j++)
+			l = strlen(test);
+
+			for (j = 0; j < l; j++)
 			{
-				if(isdigit(test[j]) == 0)
+				if (isdigit(*(test + j)) == 0)
 				{
 					printf("Error\n");
 					return (1);
 				}
-			}	
-			if (isdigit(*argv[i]) == 0)
-			{
-				printf("Error\n");
-				return (1);
 			}
-			else
-			{
-				n += atoi(argv[i]);
-			}
+
+			n += atoi(argv[i]);
 		}
+
 		printf("%d\n", n);
 	}
 	return (0);
