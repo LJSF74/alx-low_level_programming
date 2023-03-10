@@ -16,13 +16,13 @@ int main(int argc, char *argv[])
 	unsigned long int j;
 	char *test;
 
-	if (argc < 2)
+	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
 	else
-	{
+	{i
 		for (i = 1 ; i < argc ; i++)
 		{
 			test = argv[i];
@@ -45,6 +45,6 @@ int main(int argc, char *argv[])
 			}
 		}
 		printf("%d\n", n);
-		return (0);
 	}
+	return (0);
 }
