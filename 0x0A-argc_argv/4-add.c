@@ -11,8 +11,9 @@
 int main(int argc, char *argv[])
 {
 	int n = 0;
-	int i, j;
-	char test;
+	int i;
+	unsigned long int j;
+	char *test;
 
 	if (argc < 2)
 	{
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1 ; i < argc ; i++)
 		{
-			test = *argv[i];
+			test = argv[i];
 			for (j = 0 ; j < sizeof(argv[i]); j++)
 			{
 				if(isdigit(test[i]) == 0)
