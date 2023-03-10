@@ -26,3 +26,7 @@ char *string_toupper(char *);
 #define CAP_STR
 char *cap_string(char *);
 #endif
+#ifndef LEET
+#define LEET
+char *leet(char *);
+#endif
