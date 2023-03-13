@@ -11,13 +11,13 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *news;
-	int i, j;
+	size_t i, j;
 
 	news = malloc(strlen(s1) + strlen (s2) + 2);
 	if (news == NULL)
 	{
 		printf("Can't allocate memory");
-		Return(news);
+		return(news);
 	}
 	for (i = 0 ; i < strlen(s1) ; i++)
 	{
