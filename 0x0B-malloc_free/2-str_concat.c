@@ -19,8 +19,6 @@ char *str_concat(char *s1, char *s2)
 		news = '\0';
 		return (news);
 	}
-	l1 = strlen(s1);
-	l2 = strlen(s2);
 	news = malloc(strlen(s1) + strlen(s2) + 1);
 	if (news == NULL)
 	{
@@ -29,6 +27,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s1 != NULL)
 	{
+		l1 = strlen(s1);
 		for ( ; i < l1 ; i++)
 		{
 			news[i] = s1[i];
@@ -36,6 +35,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 != NULL)
 	{
+		l2 = strlen(l2);
 		for (j = 0 ; j < l2 ; j++)
 		{
 			news[i + j] = s2[j];
