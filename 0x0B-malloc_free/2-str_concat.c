@@ -13,6 +13,7 @@ char *str_concat(char *s1, char *s2)
 	char *news;
 	size_t i, j, l1, l2;
 
+	i = 0;
 	if (s1 == NULL && s2 == NULL)
 	{
 		news = '\0';
@@ -28,14 +29,10 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s1 != NULL)
 	{
-		for (i = 0 ; i < l1 ; i++)
+		for ( ; i < l1 ; i++)
 		{
 			news[i] = s1[i];
 		}
-	}
-	else
-	{
-		i = 0;
 	}
 	if (s2 != NULL)
 	{
