@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 		arr = malloc(size * sizeof(char));
 		if (arr == NULL)
 		{
-			printf("Can't allocate %d bytes\n");
+			printf("Can't allocate %d bytes\n", size * sizeof(char));
 			return (1);
 		}
 		else
