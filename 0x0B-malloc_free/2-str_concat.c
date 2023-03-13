@@ -20,22 +20,8 @@ char *str_concat(char *s1, char *s2)
 		news[0] = '\0';
 		return (news);
 	}
-	if (s1 == NULL)
-	{
-		l1 = 0;
-	}
-	else
-	{
-		l1 = strlen(s1);
-	}
-	if (s2 == NULL)
-	{
-		l2 = 0;
-	}
-	else
-	{
-		l2 = strlen(s2);
-	}
+	l1 = s1 == NULL ? 0 : strlen(s1);
+	l2 = s2 == NULL ? 0 : strlen(s2);
 	news = malloc(l1 + l2 + 1);
 	if (news == NULL)
 	{
