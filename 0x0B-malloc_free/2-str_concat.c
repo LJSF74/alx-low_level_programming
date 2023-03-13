@@ -13,6 +13,8 @@ char *str_concat(char *s1, char *s2)
 	char *news;
 	size_t i, j, l1, l2;
 
+	l1 = strlen(s1);
+	l2 = strlen(s2);
 	if (s1 == NULL)
 	{
 		l1 = 0;
@@ -22,12 +24,10 @@ char *str_concat(char *s1, char *s2)
 		l2 = 0;
 	}
 	news = malloc(strlen(s1) + strlen(s2) + 1);
-	l1 = strlen(s1);
-	l2 = strlen(s2);
 	if (news == NULL)
 	{
 		printf("Can't allocate memory");
-		return(news);
+		return (news);
 	}
 	for (i = 0 ; i < l1 ; i++)
 	{
