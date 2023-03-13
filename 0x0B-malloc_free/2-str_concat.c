@@ -35,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 != NULL)
 	{
-		l2 = strlen(l2);
+		l2 = strlen(s2);
 		for (j = 0 ; j < l2 ; j++)
 		{
 			news[i + j] = s2[j];
