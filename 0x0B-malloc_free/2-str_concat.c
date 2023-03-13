@@ -22,6 +22,8 @@ char *str_concat(char *s1, char *s2)
 		l2 = 0;
 	}
 	news = malloc(strlen(s1) + strlen(s2) + 1);
+	l1 = strlen(s1);
+	l2 = strlen(s2);
 	if (news == NULL)
 	{
 		printf("Can't allocate memory");
