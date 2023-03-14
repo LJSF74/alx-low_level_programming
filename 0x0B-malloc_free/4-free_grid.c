@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * fre_grid - frees mem allocated for grid in param
+ * free_grid - frees mem allocated for grid in param
  * @grid: array
  * @height: size of arr
  * Return: void
