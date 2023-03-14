@@ -11,6 +11,7 @@ int **alloc_grid(int width, int height)
 {
 	int **arr;
 	int i, j;
+	int f;
 
 	if (width == 0 || height == 0)
 	{
@@ -29,7 +30,10 @@ int **alloc_grid(int width, int height)
 		if (arr[i] == NULL)
 		{
 			printf("Can't allocate memory");
-			free(arr);
+			for (f = 0 ; f < height ; f++)
+			{
+				free(arr[f]);
+			}
 			return (NULL);
 		}
 	}
