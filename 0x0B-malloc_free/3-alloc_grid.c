@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	arr = malloc(height * sizeof(int *));
+	arr = malloc(width * height * sizeof(int));
 	if (arr == NULL)
 	{
 		printf("Can't allocate memory");
@@ -24,7 +24,6 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0 ; i < height ; i++)
 	{
-		arr[i] = malloc(width * sizeof(int));
 		if (arr[i] == NULL)
 		{
 			printf("Can't allocate memory");
@@ -39,5 +38,4 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (arr);
-	free(arr);
 }
