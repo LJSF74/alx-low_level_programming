@@ -13,8 +13,6 @@ void *malloc_checked(unsigned int b)
 	m = malloc(b);
 	if (m == NULL)
 	{
-		printf("Can't allocate memory");
-		free(m);
 		exit(98);
 	}
 	return (m);
