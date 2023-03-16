@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	void *m;
 
 	m = malloc(b);
-	if (m == NULL)
+	if (m == NULL || b >= INT_MAX)
 	{
 		printf("Can't allocate memory");
 		free(m);
