@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 /**
  * string_nconcat - concats two strings
  * @s1: string one
@@ -20,7 +21,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	l = n >= strlen(w2) ? strlen(w2) : n;
 	s3 = malloc(strlen(w1) + l + 1);
 	if (s3 == NULL)
+	{
+		printf("Can't allocate memory");
+		free(s3);
 		return (s3);
+	}
 	for (i = 0 ; i < strlen(w1) ; i++)
 	{
 		s3[i] = w1[i];
