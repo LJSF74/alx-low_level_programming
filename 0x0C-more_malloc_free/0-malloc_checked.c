@@ -10,10 +10,6 @@ void *malloc_checked(unsigned int b)
 {
 	void *m;
 
-	if (b == INT_MAX)
-	{
-		return (NULL);
-	}
 	m = malloc(b);
 	if (m == NULL)
 	{
