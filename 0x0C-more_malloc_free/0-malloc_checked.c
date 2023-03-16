@@ -8,9 +8,9 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *m;
+	void *m;
 
-	m = malloc(sizeof(b));
+	m = malloc(b);
 	if (m == NULL)
 	{
 		printf("Can't allocate memory");
