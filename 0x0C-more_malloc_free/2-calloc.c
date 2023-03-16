@@ -16,7 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	arr = calloc(size, sizeof(unsigned int));
+	arr = calloc(nmemb, size);
 	if (arr == NULL)
 	{
 		printf("Can't allocate memory");
