@@ -4,7 +4,7 @@
 /**
  * malloc_checked - allocates mem using malloc
  * @b: mem size
- * Return: void
+ * Return: mem
  */
 void *malloc_checked(unsigned int b)
 {
