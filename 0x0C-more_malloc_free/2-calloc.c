@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * calloc - allocates mem for an array
+ * _calloc - allocates mem for an array
  * @nmemb: elems of arr
  * @size: arr len
  * Return: arr
@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		printf("Can't allocate memory");
 		free(arr);
-		return(NULL);
+		return (NULL);
 	}
 	for (i = 0 ; i < size ; i++)
 	{
