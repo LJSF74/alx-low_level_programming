@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *
+ * array_range -  creates array from min to max
+ * @min: first elem
+ * @max: last elem
+ * Return: arr
  */
 int *array_range(int min, int max)
 {
