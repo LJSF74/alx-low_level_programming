@@ -2,8 +2,6 @@
 /**
  * get_op_func - fetches op func according to operation in param
  * @s: operation symbol
- * @a: first int
- * @b: second int
  * Return: operation
  */
 int (*get_op_func(char *s))(int, int)
