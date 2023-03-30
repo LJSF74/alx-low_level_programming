@@ -15,7 +15,7 @@ list_t *add_node(list_t **head, const char *str)
 	char *ch = strdup(str);
 
 	n = malloc(sizeof(list_t));
-	if (n == NULL)
+	if (p == NULL || n == NULL)
 	{
 		printf("Can't allocate memory");
 		return (NULL);
