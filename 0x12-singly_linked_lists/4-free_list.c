@@ -6,12 +6,11 @@
  * Return: void
  */
 void free_list(list_t *head)
-{
-	list_t *p = head->next;
-
-	while (p = head)
+{	
+	while (head)
 	{
-		free(p->str);
+		free(head->str);
 		head = head->next;
 	}
+	free(head);
 }
