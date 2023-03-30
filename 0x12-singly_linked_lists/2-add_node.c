@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <string.h>
 #include <stdlib.h>
-#include <stdio.h>
 /**
  * add_node - adds elem to linked list
  * @head: linked list
@@ -15,15 +14,13 @@ list_t *add_node(list_t **head, const char *str)
 	char *ch = strdup(str);
 
 	n = malloc(sizeof(list_t));
-	if (p == NULL || n == NULL)
+	if (head == NULL || n == NULL)
 	{
-		printf("Can't allocate memory");
 		return (NULL);
 	}
 	n->str = malloc(strlen(ch) + 1);
 	if (n->str == NULL)
 	{
-		printf("Can't allocate memory");
 		return (NULL);
 	}
 	strcpy(n->str, ch);
