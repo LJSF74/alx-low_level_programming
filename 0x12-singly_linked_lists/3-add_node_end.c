@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *
+ * add_node_end - adds node at end of linked list
+ * @head: list
+ * @str: node elem
+ * Return: p
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -15,7 +18,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
-	n->str = malloc (strlen(ch) + 1);
+	n->str = malloc(strlen(ch) + 1);
 	if (n->str == NULL)
 	{
 		free(n);
