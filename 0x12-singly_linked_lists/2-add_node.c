@@ -18,10 +18,7 @@ list_t *add_node(list_t **head, const char *str)
 	strcpy(n->str, ch);
 	n->len = strlen(ch);
 	n->next = NULL;
-	while(*p)
-	{
-		p = &(*p)->next;
-	}
+	n->next = *p;
 	*p = n;
 	return (*p);
 }
