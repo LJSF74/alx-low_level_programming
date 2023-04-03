@@ -4,7 +4,7 @@
 /**
  * add_nodeint_end - adds node at end of linked list
  * @head: list
- * @str: node elem
+ * @n: node elem
  * Return: p
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
